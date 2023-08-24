@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Contact Page</h1>
+        </header>
+        <main>
+            <form action="result.html" method="GET" enctype="multipart/form-data" >
+                <div class="email">
+                    <label for="email"><h2>Email:</h2></label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="comments">
+                    <label for="Comments"><h2>Comments:</h2></label>
+                    <textarea id="add-comments" name="add-comments" id="add-comments" rows="5" minlength ="20" maxlength="500" cols="33"> </textarea>
+                </div>
+                <div class="hear-abt-me">
+                    <h2>How Did You Hear About Me?</h2> 
+                    <ul class="options">
+                        <li><lable><input type="checkbox" name="classmate" id="classmate" value="Classmate"/></li> <span>Classmate</span></lable>
+                        <li><lable><input type="checkbox" name="resume" id="resume" value="Resume"/></li> <span>Resume Submission</span></lable>
+                        <li><lable><input type="checkbox" name="linkedin" id="linkedin" value="LinkedIn"/></li> <span>LinkedIn</span></lable>
+                        <li><lable><input type="checkbox" name="austincodingacademy" id="austincodingacademy" value="AustinCodingAcademy"/></li> <span>Coding Academy Rec</span></lable>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>Would You Like To Be Contacted Back?</h2>
+                    <ul class="options">
+                       <li><lable><input type="radio" name="question2" id="yes" value="A"/></li> <span>Yes</span></lable>
+                       <li><lable><input type="radio" name="question2" id="no" value="B"/></li> <span>No</span></lable>
+                    </ul>
+                </div> 
+                <div class="birthday">
+                    <h2>Optional: Birthday Suprise</h2>
+                    <input type="date" id="birthday" name="birth-day" value="" min="1923-01-01" max="2023-01-01" />
+                </div> <br>
+                
+                <button type="submit">Submit</button>
+                   
+                
+
+                
+            </form>
+        </main>
+    </div>
+
+    <div class="message">
+
+
+    </div>
+
+
+
+
+
+    <script src="contact.js"></script>
+</body>
+</html>
